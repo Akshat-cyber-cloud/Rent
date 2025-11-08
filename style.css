@@ -11,11 +11,12 @@ body {
 }
 
 #main {
-    height: 92%;
+    height: 100%;
     width: 100%;
     background-image: url('https://creativelayers.net/themes/boxcar-html/images/banner/banner-page1.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 80%;
+    position: relative;
 }
 
 nav {
@@ -25,10 +26,7 @@ nav {
     justify-content: space-between;
     padding: 1rem 2rem;
     color: white;
-    /* position: fixed; */
     top: 0;
-    /* background-color: rgba(255,255,255,0.9); */
-    /* backdrop-filter: blur(8px); */
 }
 
 nav h1 {
@@ -88,7 +86,6 @@ nav #btn1:hover {
     color: white;
     font-size: 4rem;
     font-weight: 700;
-    /* margin-bottom: 2rem; */
 }
 
 .search-box {
@@ -138,6 +135,123 @@ nav #btn1:hover {
 .search-box button:hover {
   background-color: #d62839;
   transform: scale(1.05);
+}
+
+#main2{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    padding: 100px;
+    margin-top: -63px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+#box1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#box2{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.car-card {
+  flex: 0 0 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.car-image img:hover {
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #3b82f6;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.car-details {
+  padding: 15px;
+}
+
+.car-details h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.car-details p {
+  font-size: 13px;
+  color: gray;
+}
+
+.car-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #444;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.price .old {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.price .new {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.price a {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 
