@@ -1,42 +1,42 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #main {
-    height: 100%;
-    width: 100%;
-    background-image: url('https://creativelayers.net/themes/boxcar-html/images/banner/banner-page1.jpg');
-    background-repeat: no-repeat;
-    background-position: center 80%;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://creativelayers.net/themes/boxcar-html/images/banner/banner-page1.jpg');
+  background-repeat: no-repeat;
+  background-position: center 80%;
+  position: relative;
 }
 
 nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    color: white;
-    top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: white;
+  top: 0;
 }
 
 nav h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 nav #content {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 nav #content a {
@@ -58,34 +58,34 @@ nav #content a:hover {
 }
 
 nav #btn1 {
-    color: black;
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    border: none;
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
 }
 
 nav #btn1:hover {
-    background-color: #405FF2;
-    color: white;
+  background-color: #405FF2;
+  color: white;
 }
 
-#view1 h3{
-    margin-top: 3rem;
-    text-align: center;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 500;
+#view1 h3 {
+  margin-top: 3rem;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
-#view1 h1{
-    margin-top: 3rem;
-    text-align: center;
-    color: white;
-    font-size: 4rem;
-    font-weight: 700;
+#view1 h1 {
+  margin-top: 3rem;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .search-box {
@@ -100,7 +100,7 @@ nav #btn1:hover {
   width: 80%;
   max-width: 700px;
   margin: 2rem auto 0;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .search-box input,
@@ -109,7 +109,7 @@ nav #btn1:hover {
   border: none;
   outline: none;
   border-radius: 8px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
   flex: 1;
   color: #333;
@@ -137,31 +137,42 @@ nav #btn1:hover {
   transform: scale(1.05);
 }
 
-#main2{
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    padding: 100px;
-    margin-top: -63px;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
+.section-wrapper {
+  border-radius: 80px;
+  /* overflow: hidden; */
 }
 
-#box1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2rem;
+#main2 {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  padding: 100px;
+  padding-bottom: 0;
+  margin-top: -63px;
+  margin-bottom: -50px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  overflow: visible;
+  /* z-index: 1000; */
 }
 
-#box2{
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+#box1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+#box2 {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .car-card {
@@ -169,7 +180,7 @@ nav #btn1:hover {
   border-radius: 15px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   overflow: hidden;
 }
@@ -254,4 +265,169 @@ nav #btn1:hover {
   font-weight: 500;
 }
 
+
+#box3 {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 600px;
+  align-items: stretch;
+  background-color: #EEF1FB;
+  border-radius: 10px;
+}
+
+#box3 #left {
+  background-image: url('https://creativelayers.net/themes/boxcar-html/images/resource/pricing1-1.jpg');
+  background-position: center;
+  border-radius: 10px;
+}
+
+#box3 #right {
+  padding: 3rem 5rem;
+  font-size: 1.3rem;
+}
+
+
+#box3 #content {
+  margin-top: 2rem;
+}
+
+#box3 #content #list {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#box3 #content #list i {
+  padding: 10px 10px;
+  background-color: white;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+
+#box3 #content #list #btn2 {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: 40%;
+  background-color: #2563eb;
+  color: white;
+}
+
+#box4{
+  margin-top: 5rem;
+  font-size: 1.4rem;
+  border-top: 0.5px solid gray;
+  padding: 1rem 0;
+}
+
+#box5 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 10px 20px;
+}
+
+#box5 .card1{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#box5 .card1 h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#box5 .card1 p{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#box5 .card1 i{
+  font-size: 2.5rem;
+  color: #2563eb;
+}
+
+#box6{
+  margin-top: 4rem;
+  border-top: 0.5px solid gray;
+  padding: 1.5rem 0;
+}
+
+#main3 {
+  width: 100%;
+  height: 400px;
+  background-color: #000000;
+  overflow: hidden;
+  color: white;
+  padding: 3rem;
+  display: flex;
+}
+#main3 #left{
+  width: 100%;
+}
+
+#main3 video {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.6);
+  margin-top: 10px;
+}
+
+#btn3 {
+  padding: 12px 30px;
+  border-radius: 50px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#btn3:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+#box7 {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+}
+
+.review {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.review.active {
+  opacity: 1;
+  position: relative;
+}
+
+.review h4 {
+  margin-top: 0.8rem;
+  color: #2563eb;
+  font-weight: 600;
+}
 
