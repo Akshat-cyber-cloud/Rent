@@ -31,4 +31,28 @@ window.addEventListener('click', (e) => {
 });
 
 
+const contactBtn = document.querySelector('#contactBtn');
+const contactBox = document.querySelector('#ContactPage');
+const contactClose = contactBox.querySelector('.close');
+
+contactBtn.addEventListener("click",(e) => {
+  e.preventDefault();
+  contactBox.style.display = "flex";
+});
+
+contactClose.addEventListener("click", () => {
+  contactBox.style.display = "none";
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === contactBox) {
+    contactBox.style.display = 'none';
+  }
+});
+
+
+
+
+
+
 
