@@ -35,7 +35,7 @@ const contactBtn = document.querySelector('#contactBtn');
 const contactBox = document.querySelector('#ContactPage');
 const contactClose = contactBox.querySelector('.close');
 
-contactBtn.addEventListener("click",(e) => {
+contactBtn.addEventListener("click", (e) => {
   e.preventDefault();
   contactBox.style.display = "flex";
 });
